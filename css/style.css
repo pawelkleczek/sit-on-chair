@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&subset=latin-ext');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.container:before, .container:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.header {
+    background-color: #000000;
+}
+
+.header h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    width: 50%;
+    float: left;
+}
+
+.header h1 span {
+    color: #27c7ab;
+}
+
+.header nav {
+    width: 50%;
+    float: left;
+}
+
+.mainMenu {
+    list-style-type: none;
+    width: 100%;
+    text-align: right;
+}
+
+.mainMenu li {
+    display: inline-block;
+    position: relative;
+}
+
+.mainMenu li a {
+    display: block;
+    color: #ffffff;
+    padding: 15px 25px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.subMenu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    left: 0;
+    top: calc(100% + 20px);
+    text-align: left;
+		z-index: 99;
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom: 20px solid black;
+    top: -40px;
+    left: calc(50% - 20px);
+}
+
+.hasChildren a:focus+.subMenu {
+    display: block;
+}
+
+#slider {
+		position: relative;
+    padding: 100px 0 50px 0;
+    background: linear-gradient(#fafafa, #d0cfd7);
+}
+
+#sliderText {
+    padding-top: 60px;
+}
+
+#slider img {
+    width: 50%;
+    float: left;
+}
+
+#slider #sliderText {
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+#sliderText button {
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: #27c7ab;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 300;
+    outline: 0;
+}
+
+#sliderText span {
+    color: #27c7ab;
+}
+
+#sliderText h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+#sliderText p {
+    font-size: 1.4rem;
+    padding: 20px;
+}
+
+#next, #prev {
+    font-size: 7.8rem;
+    color: #27c7ab;
+    position: absolute;
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    outline: 0;
+}
+
+#prev {
+    left: 10px;
+    top: calc(50% - 45px);
+}
+
+#next {
+    right: 10px;
+    top: calc(50% - 45px);
+}
+
+.product1, .product2 {
+	float: left;
+	width: 30%;
+	margin: 10px;
+	height: 220px;
+}
+.product1 {
+	background-image: url(../images/box1_img.jpg);
+}
+.product2 {
+	background-image: url(../images/box2_img.jpg);
+}
+
+#content article {
+	float: left;
+	width: 30%;
+	font-size: 1.4rem;
+	margin: 10px;
+	border: 1px solid rgba(128, 128, 128, 0.5);
+	height: 240px;
+}
+
+#content article h3 {
+	font-size: 1.8rem;
+	font-weight: 600;
+	padding: 10px 10px;
+}
+
+#content article h3 span {
+	border-bottom: 4px solid #27c7ab;
+}
+#content article p:first-of-type {
+	padding: 10px 10px;
+}
+#content article p:last-of-type {
+	padding: 10px 10px;
+}
