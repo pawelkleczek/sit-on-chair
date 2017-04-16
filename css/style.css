@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,900&subset=latin-ext');
 * {
     margin: 0;
     padding: 0;
@@ -72,7 +72,7 @@ html {
     left: 0;
     top: calc(100% + 20px);
     text-align: left;
-		z-index: 99;
+    z-index: 99;
 }
 
 .triangle {
@@ -90,7 +90,7 @@ html {
 }
 
 #slider {
-		position: relative;
+    position: relative;
     padding: 100px 0 50px 0;
     background: linear-gradient(#fafafa, #d0cfd7);
 }
@@ -158,39 +158,344 @@ html {
 }
 
 .product1, .product2 {
-	float: left;
-	width: 30%;
-	margin: 10px;
-	height: 220px;
+    float: left;
+    width: 30%;
+    margin: 10px;
+    height: 220px;
 }
+
 .product1 {
-	background-image: url(../images/box1_img.jpg);
+    background-image: url(../images/box1_img.jpg);
 }
+
 .product2 {
-	background-image: url(../images/box2_img.jpg);
+    background-image: url(../images/box2_img.jpg);
 }
 
 #content article {
-	float: left;
-	width: 30%;
-	font-size: 1.4rem;
-	margin: 10px;
-	border: 1px solid rgba(128, 128, 128, 0.5);
-	height: 240px;
+    float: left;
+    width: 30%;
+    font-size: 1.4rem;
+    margin: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    height: 240px;
 }
 
 #content article h3 {
-	font-size: 1.8rem;
-	font-weight: 600;
-	padding: 10px 10px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 10px 10px;
 }
 
-#content article h3 span {
-	border-bottom: 4px solid #27c7ab;
+.border-bottom {
+    border-bottom: 4px solid #27c7ab;
 }
+
 #content article p:first-of-type {
-	padding: 10px 10px;
+    padding: 10px 10px;
 }
+
 #content article p:last-of-type {
-	padding: 10px 10px;
+    padding: 10px 10px;
+}
+
+.product1 h3, .product2 h3 {
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 150px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 10px;
+}
+
+#prices {
+    background-color: rgb(249, 249, 249);
+}
+
+.sectionH2 {
+    width: 30%;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 15px 0 20px 10px;
+}
+
+.price-box {
+    position: relative;
+    width: 30%;
+    height: 500px;
+    margin: 10px;
+    margin-top: 25px;
+    float: left;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.big-circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    top: -30px;
+    left: calc(50% - 25px);
+    z-index: 2;
+    background-color: white;
+}
+
+.small-circle {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    border-radius: 50px;
+    background-color: rgba(128, 128, 128, 0.5);
+    top: 11px;
+    left: 11px;
+}
+
+h2.basic-plan {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #27c7ab;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.price-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    background-color: white;
+    margin: 10px auto;
+    color: rgba(128, 128, 128, 0.5);
+    position: relative;
+}
+
+.price-circle span.price-part1 {
+    font-size: 40px;
+    line-height: 40px;
+    position: absolute;
+    font-weight: 600;
+    top: 30px;
+    left: 30px;
+}
+
+.price-circle span.price-part2 {
+    font-size: 16px;
+    line-height: 16px;
+    position: absolute;
+    top: 30px;
+    left: 75px;
+}
+
+.price-circle span.price-part3 {
+    font-size: 15px;
+    line-height: 15px;
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 25px;
+    left: 25px;
+}
+
+.price-box h3 {
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 40px;
+}
+
+.price-box:first-of-type h3:first-of-type {
+    background-color: rgb(228, 228, 228);
+    margin-top: 30px;
+    border-top: 2px solid white;
+}
+
+.price-box:first-of-type h3:last-of-type {
+    background-color: rgb(241, 241, 241);
+}
+
+.price-box:nth-of-type(2n+1) button {
+    background-color: #27c7ab;
+    color: white;
+    border: none;
+    width: 120px;
+    height: 30px;
+    outline: 0;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 60px);
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.price-box:nth-of-type(2) button {
+    background-color: white;
+    color: #27c7ab;
+    border: none;
+    width: 120px;
+    height: 30px;
+    outline: 0;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 60px);
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.price-box:nth-of-type(2) h3:first-of-type {
+    background-color: white;
+    margin-top: 30px;
+}
+
+.price-box:nth-of-type(2) h3:nth-last-of-type(2) {
+    background-color: rgb(241, 241, 241);
+}
+
+.price-box:nth-of-type(2) h3:nth-last-of-type(1) {
+    background-color: white;
+}
+
+.price-box:nth-of-type(3) h3:first-of-type {
+    background-color: rgb(228, 228, 228);
+    margin-top: 30px;
+    border-top: 2px solid white;
+}
+
+.price-box:nth-of-type(3) h3:nth-last-of-type(2n+1) {
+    background-color: rgb(241, 241, 241);
+}
+
+.price-box:nth-of-type(3) h3:nth-last-of-type(2) {
+    background-color: rgb(228, 228, 228);
+}
+
+.price-box:nth-of-type(2) {
+    background-color: #27c7ab;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.contact-form {
+    width: 100%;
+    height: 350px;
+}
+
+.contact-form input {
+    margin: 10px 10px;
+    width: 50%;
+    border: 1px solid rgba(39, 199, 171, .5);
+    outline-color: rgb(39, 199, 171);
+    font-size: 18px;
+    padding: 10px;
+}
+
+.contact {
+    position: relative;
+}
+
+.contact img {
+    position: absolute;
+    left: 60%;
+}
+
+.contact-form textarea {
+    margin: 0 10px;
+	padding: 10px;
+    width: 50%;
+    height: 230px;
+    border: 1px solid rgba(39, 199, 171, .5);
+    resize: none;
+    outline-color: rgb(39, 199, 171);
+    font-size: 18px;
+}
+
+.contact-form label {
+    width: 264px;
+    height: 50px;
+    font-size: 18px;
+    text-align: left;
+    position: absolute;
+    bottom: 80px;
+    left: 60%;
+}
+
+.contact-form label input {
+    width: 10px;
+    background-color: pink;
+    background-image: url('../images/form_ok.jpg');
+}
+
+.contact-form button {
+    width: 264px;
+    height: 50px;
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    background-color: #27c7ab;
+    border: none;
+    outline: 0;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 60%;
+    text-transform: uppercase;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(128, 128, 128, 0.5);
+    font-size: 18px;
+    font-weight: 200;
+}
+
+::-moz-placeholder {
+    color: rgba(128, 128, 128, 0.5);
+    font-size: 18px;
+    font-weight: 200;
+}
+
+footer p {
+    float: left;
+    width: 60%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: grey;
+	line-height: 35px;
+}
+
+.foots {
+	float: right;
+    width: 20%;
+}
+
+.foots img {
+	float: left;
+}
+
+footer {
+	margin-bottom: 15px;
+}
+
+footer h1 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: grey;
+	line-height: 35px;
+    text-transform: uppercase;
+    width: 20%;
+	float: right;
+}
+
+footer h1 span {
+    font-weight: 700;
 }
