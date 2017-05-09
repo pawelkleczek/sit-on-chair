@@ -74,6 +74,9 @@ html {
     text-align: left;
     z-index: 99;
 }
+.subMenuVisible {
+	display: block;
+}
 
 .triangle {
     position: absolute;
